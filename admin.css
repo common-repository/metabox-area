@@ -1,0 +1,85 @@
+/* bump */
+.ui-sortable.bump {
+    position: relative;
+    min-height: 5em;
+	border: 3px dashed #b4b9be;
+}
+
+
+/* left right (top and bottom) ---------- */
+#post-body-content{ margin-bottom: 0; }
+#postbox-leftright{ margin-top: 20px; }
+#postbox-leftright:after,
+#postbox-bot-leftright:after{ content:''; display:table; clear: both; }
+
+#postbox-bot-leftright{ clear:both; }
+
+#post-body #postbox-container-left,
+#post-body #postbox-container-botleft{ width:50%; float:left; }
+#post-body #postbox-container-right,
+#post-body #postbox-container-botright{ width:50%; float:right; }
+
+#post-body #left-sortables,
+#post-body #botleft-sortables{ margin-right:10px; }
+#post-body #right-sortables,
+#post-body #botright-sortables{ margin-left:10px; }
+
+@media screen and (max-width:1150px){
+	#post-body #postbox-container-left,
+	#post-body #postbox-container-botleft{ width:100%; float:none; }
+	#post-body #postbox-container-right,
+	#post-body #postbox-container-botright{ width:100%; float:none; }
+
+	#post-body #left-sortables,
+	#post-body #botleft-sortables{ margin-right:0; }
+	#post-body #right-sortables,
+	#post-body #botright-sortables{ margin-left:0; }
+}
+	
+@media screen and (max-width:1500px)
+{
+	#post-body.columns-3 #postbox-container-left,
+	#post-body.columns-3 #postbox-container-botleft{ width:100%; float:none; }
+	#post-body.columns-3 #postbox-container-right,
+	#post-body.columns-3 #postbox-container-botright{ width:100%; float:none; }
+
+	#post-body.columns-3 #left-sortables,
+	#post-body.columns-3 #botleft-sortables{ margin-right:0; }
+	#post-body.columns-3 #right-sortables,
+	#post-body.columns-3 #botright-sortables{ margin-left:0; }
+}
+
+	
+
+/* columns ---------- */
+
+
+/* columns-2 */
+#post-body.columns-2 #postbox-container-3 {
+	float: right;
+	clear: right;
+    margin-right: -300px;
+    width: 280px;	
+}
+
+/* columns-3 */
+@media screen and (min-width:1300px){
+	#post-body.columns-3 {
+		margin-right: 600px;
+	}
+
+	#post-body.columns-3 #postbox-container-1,
+	#post-body.columns-3 #postbox-container-3 {
+		float: right;
+		width: 280px;
+	}
+	#post-body.columns-3 #postbox-container-1 {
+		margin-right: -300px
+	}
+
+	#post-body.columns-3 #postbox-container-3 {
+    	margin-right: -600px;
+	}
+}
+
+
